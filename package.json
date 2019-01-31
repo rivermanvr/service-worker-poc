@@ -1,0 +1,16 @@
+{
+  "name": "vr-sw-poc",
+  "version": "1.0.0",
+  "description": "repo:  express server & react repo at a lower level Add proxy to package.json file Create server.js file with express server and routes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
