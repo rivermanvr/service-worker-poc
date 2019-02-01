@@ -31,6 +31,14 @@ render() {
       </header>
       {/* Render the newly fetched data inside of this.state.data  */}
       <p>{this.state.data}</p>
+      <div className="App-Button-Container App-paddingBelow">
+        <h3>Select the case you wish to run</h3>
+        <div>
+          <input className="App-Button App-SpacingRight" type="button" value="Case 1"></input>
+          <input className="App-Button App-SpacingRight" type="button" value="Case 2"></input>
+          <input className="App-Button" type="button" value="Case 3"></input>
+        </div>
+      </div>
     </div>
   );
 }
