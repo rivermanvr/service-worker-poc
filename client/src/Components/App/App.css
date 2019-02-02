@@ -14,15 +14,18 @@
 }
 
 .App-Button-Container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   background-color: #f7f6f6;
   border-style: solid;
   border-color: rgb(218, 211, 203);
 }
 
 .App-Button {
+  margin: 1px;
   border: 0;
   line-height: 2.5;
-  padding: 0 20px;
+  padding: 0 2px;
   font-size: 1rem;
   text-align: center;
   color: #fff;
@@ -50,10 +53,11 @@
   margin-right: 5rem
 }
 
-.App-MarginBelow {
-  margin-bottom: 
-}
-
 .App-paddingBelow {
   padding-bottom: 1rem; 
+  padding-top: 1rem;
+}
+
+.App-marginBelow {
+  padding-bottom: 2rem; 
 }

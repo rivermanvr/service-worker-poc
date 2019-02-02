@@ -22,6 +22,10 @@ class App extends Component {
     }
     return body;
   };
+  
+  buttonPress(option, button) {
+    console.log('button press', option, button);
+  }
 
 render() {
   return (
@@ -32,12 +36,25 @@ render() {
       {/* Render the newly fetched data inside of this.state.data  */}
       <p>{this.state.data}</p>
       <div className="App-Button-Container App-paddingBelow">
-        <h3>Select the case you wish to run</h3>
-        <div>
-          <input className="App-Button App-SpacingRight" type="button" value="Case 1"></input>
-          <input className="App-Button App-SpacingRight" type="button" value="Case 2"></input>
-          <input className="App-Button" type="button" value="Case 3"></input>
-        </div>
+        <h3>Case 1: Service Worker #1:</h3>
+        <input className="App-Button" type="button" value="Root Route" onClick={ () => this.buttonPress(1, 1) }></input>
+        <input className="App-Button" type="button" value="Child Route 1" onClick={ () => this.buttonPress(1, 2) }></input>
+        <input className="App-Button" type="button" value="Child Route 2" onClick={ () => this.buttonPress(1, 3) }></input>
+      </div>
+      <div className="App-Button-Container App-paddingBelow">
+        <h3>Case 2: Service Worker #2:</h3>
+        <input className="App-Button" type="button" value="Root Route" onClick={ () => this.buttonPress(2, 1) }></input>
+        <input className="App-Button" type="button" value="Child Route 1" onClick={ () => this.buttonPress(2, 2) }></input>
+        <input className="App-Button" type="button" value="Child Route 2" onClick={ () => this.buttonPress(2, 3) }></input>
+      </div>
+      <div className="App-Button-Container App-paddingBelow">
+        <h3>Case 3: No Service Worker:</h3>
+        <input className="App-Button" type="button" value="Root Route" onClick={ () => this.buttonPress(3, 1) }></input>
+        <input className="App-Button" type="button" value="Child Route 1" onClick={ () => this.buttonPress(3, 2) }></input>
+        <input className="App-Button" type="button" value="Child Route 2" onClick={ () => this.buttonPress(3, 3) }></input>
+      </div>
+      <div className="App-marginBelow">
+        <h3>Results</h3>
       </div>
     </div>
   );
