@@ -5,7 +5,7 @@ class Results extends Component {
   render() {
     return (
      <div>
-       Hi.  We are in Results
+       Connected
      </div>
     );
   }
